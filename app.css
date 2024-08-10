@@ -1,0 +1,94 @@
+body {
+    /* Menetapkan warna latar belakang dasar */
+    background-color: #e8f4f8;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
+}
+
+.header {
+    /* Menggunakan gradient dan gambar pola sebagai latar belakang */
+   
+    background: 
+        linear-gradient(to bottom right, rgb(255, 255, 255), rgba(192, 227, 248, 0.8)), /* Gradient dengan transparansi */
+        url('img/pattern backg.png') repeat; /* Gambar pola latar belakang */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang semi-transparan jika gambar pola tidak menutupi seluruh area */
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    color: #5a5a5a;
+}
+
+img.small-img {
+    margin: 20px 0; /* Memberi jarak vertikal 20px di atas dan bawah gambar */
+    border-radius: 10px;
+    max-width: 70%; /* Mengatur lebar maksimal gambar menjadi 70% dari kontainer */
+    height: auto;
+    /* border: 2px solid #1a73e8; */
+    border-radius: 25px;
+}
+
+.header p {
+    background-color: #f0f9ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 767px) {
+    .title {
+        font-size: 2rem; /* Ukuran font H1 lebih kecil untuk mobile */
+    }
+
+    p, ul li {
+        font-size: 1rem; /* Ukuran font paragraf dan daftar lebih kecil untuk mobile */
+    }
+
+    .header {
+        padding: 15px; /* Padding lebih kecil untuk mobile */
+    }
+
+    img.small-img {
+        max-width: 80%; /* Lebar maksimal gambar lebih kecil untuk mobile */
+        margin: 15px 0; /* Memberi jarak vertikal 15px di atas dan bawah gambar pada mobile */
+    }
+}
+
+/* Styling tambahan untuk logo dan kredit desain */
+
+.logo-img {
+    margin-top: 20px; /* Jarak vertikal antara gambar dan teks */
+    max-width: 150px; /* Ukuran maksimal gambar logo */
+    height: auto;
+}
+
+.design-credit {
+    margin-top: 10px; /* Jarak antara gambar logo dan teks */
+    font-size: 0.8rem; /* Ukuran font kecil */
+    color: #5a5a5a; /* Warna teks */
+}
